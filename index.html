@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio // DIBUJO TÉCNICO — Atlas de Referencia ISO/DIN</title>
+  <meta name="description" content="Portal educativo y de referencia técnica sobre Dibujo Técnico: pilares normativos ISO/DIN, calculadora de escalas, galería de planos, historia y aplicaciones." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="inicio">
+  <div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress__bar" id="readingProgressBar"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Inicio - Dibujo Técnico">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+            <rect x="2" y="2" width="28" height="28" stroke="#0284C7" stroke-width="1.5" />
+            <circle cx="11" cy="16" r="5" stroke="#F8FAFC" stroke-width="1.5" />
+            <circle cx="11" cy="16" r="2.2" stroke="#D97706" stroke-width="1.2" />
+            <polygon points="19,12.5 27,10 27,22 19,19.5" stroke="#F8FAFC" stroke-width="1.5" fill="none" />
+            <line x1="4" y1="16" x2="29" y2="16" stroke="#0284C7" stroke-width="0.9" stroke-dasharray="3 2" />
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__title">DIBUJO TÉCNICO</span>
+          <span class="brand__code mono">ISO-128 // REF-2026</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link is-active"><span class="mono nav-num">01</span> Inicio</a></li>
+          <li><a href="pilares.html" class="nav-link"><span class="mono nav-num">02</span> Pilares</a></li>
+          <li><a href="calculadora.html" class="nav-link"><span class="mono nav-num">03</span> Escalas</a></li>
+          <li><a href="galeria.html" class="nav-link"><span class="mono nav-num">04</span> Galería</a></li>
+          <li><a href="historia.html" class="nav-link"><span class="mono nav-num">05</span> Historia</a></li>
+          <li><a href="aplicaciones.html" class="nav-link"><span class="mono nav-num">06</span> Aplicaciones</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-meta">
+        <span class="status-pill mono">PÁG: 01/06</span>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Principal -->
+    <section class="hero-section blueprint-grid">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="tech-kicker mono">
+            <span class="kicker-dot"></span>
+            ATLAS MULTIPÁGINA // UNE-EN ISO 5457
+          </div>
+          <h1 class="hero-title">
+            El lenguaje universal de la <span class="text-accent-cyan">ingeniería</span> y la <span class="text-accent-amber">arquitectura</span>.
+          </h1>
+          <p class="hero-subtitle">
+            El dibujo técnico transforma conceptos tridimensionales en documentos gráficos exactos,
+            normados y reproducibles. Explora cada disciplina en su propia página dedicada: fundamentos
+            ISO/DIN, calculadora de escalas, galería de láminas, historia y aplicaciones industriales.
+          </p>
+
+          <div class="hero-actions">
+            <a href="galeria.html" class="btn btn-primary">
+              <span>Explorar Galería de Láminas</span>
+              <svg viewBox="0 0 20 20" width="16" height="16" fill="none" aria-hidden="true">
+                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" />
+              </svg>
+            </a>
+            <a href="calculadora.html" class="btn btn-outline-light">
+              <span class="mono">E 1:X</span> Calculadora de Escalas
+            </a>
+          </div>
+
+          <dl class="hero-specs mono">
+            <div class="hero-spec-item">
+              <dt>PROYECCIÓN</dt>
+              <dd>ISO-E (1.er Diedro)</dd>
+            </div>
+            <div class="hero-spec-item">
+              <dt>UNIDADES</dt>
+              <dd>Milímetros (mm)</dd>
+            </div>
+            <div class="hero-spec-item">
+              <dt>MÓDULOS</dt>
+              <dd>06 Páginas Dedicadas</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Multimedia Hero generado -->
+        <div class="hero-visual">
+          <div class="blueprint-frame">
+            <div class="blueprint-frame__bar mono">
+              <span>MESA DE TRAZADO // REF-00</span>
+              <span>ISO 128 · ESC. 1:1</span>
+            </div>
+            <div class="blueprint-frame__media">
+              <img src="assets/images/hero-blueprint.jpg" alt="Mesa de dibujo técnico con planos blueprint, escalímetro y compás de precisión" />
+            </div>
+            <div class="blueprint-frame__footer mono">
+              <span>REPRESENTACIÓN GRÁFICA NORMALIZADA</span>
+              <strong>SISTEMA ISO / DIN</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mapa de Páginas y Segmentos -->
+    <section class="paper-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag mono">01.1 // ÍNDICE GENERAL DE PÁGINAS</span>
+          <h2 class="section-title">Explora cada módulo del Atlas</h2>
+          <p class="section-lead">
+            Cada opción del menú y cada segmento técnico cuenta con su propia página completa de referencia, herramientas interactivas y material visual dedicado.
+          </p>
+        </div>
+
+        <div class="hub-grid">
+          <a href="pilares.html" class="hub-card">
+            <div class="hub-card__top mono">
+              <span class="hub-num">02</span>
+              <span class="hub-tag">ISO / DIN</span>
+            </div>
+            <h3>Pilares Fundamentales</h3>
+            <p>Normalización ISO/DIN, tabla completa del alfabeto de líneas, serie de formatos A0–A4 y comparativa entre Sistema Europeo y Americano.</p>
+            <span class="hub-link mono">ABRIR PÁGINA PILARES →</span>
+          </a>
+
+          <a href="calculadora.html" class="hub-card">
+            <div class="hub-card__top mono">
+              <span class="hub-num">03</span>
+              <span class="hub-tag">ISO 5455</span>
+            </div>
+            <h3>Calculadora de Escalas</h3>
+            <p>Conversor bidireccional (Real ↔ Plano) para escalas Natural, Reducción y Ampliación, verificador de formato A4/A3 y tabla normativa.</p>
+            <span class="hub-link mono">ABRIR CALCULADORA →</span>
+          </a>
+
+          <a href="galeria.html" class="hub-card">
+            <div class="hub-card__top mono">
+              <span class="hub-num">04</span>
+              <span class="hub-tag">06 LÁMINAS</span>
+            </div>
+            <h3>Galería de Láminas y Planos</h3>
+            <p>Catálogo filtrable con láminas en alta resolución e inspección dual (Imagen HD / Plano SVG) en lightbox interactivo con cajetín técnico.</p>
+            <span class="hub-link mono">ABRIR GALERÍA →</span>
+          </a>
+
+          <a href="historia.html" class="hub-card">
+            <div class="hub-card__top mono">
+              <span class="hub-num">05</span>
+              <span class="hub-tag">CRONOLOGÍA</span>
+            </div>
+            <h3>Historia del Arte y del Dibujo</h3>
+            <p>Línea de tiempo interactiva e ilustrada desde la estatua de Gudea y el Renacimiento hasta Gaspard Monge, normas ISO/DIN y BIM.</p>
+            <span class="hub-link mono">ABRIR HISTORIA →</span>
+          </a>
+
+          <a href="aplicaciones.html" class="hub-card">
+            <div class="hub-card__top mono">
+              <span class="hub-num">06</span>
+              <span class="hub-tag">INDUSTRIA</span>
+            </div>
+            <h3>Aplicaciones Industriales</h3>
+            <p>Análisis visual y técnico de Ingeniería Mecánica, Arquitectura, Electrónica/Mecatrónica y Diseño de Producto con matriz comparativa.</p>
+            <span class="hub-link mono">ABRIR APLICACIONES →</span>
+          </a>
+
+          <div class="hub-card blueprint-grid">
+            <div class="hub-card__top mono" style="border-bottom-color: #334155;">
+              <span class="hub-num" style="background-color: #D97706; color: #0F172A;">REF</span>
+              <span class="hub-tag" style="color: #0284C7;">ESTÁNDAR</span>
+            </div>
+            <h3 style="color: #F8FAFC;">Sistema Unificado</h3>
+            <p style="color: #94A3B8;">Todas las páginas comparten la misma normativa gráfica: cotas en mm, trazos normalizados y acceso directo al cajetín de consulta.</p>
+            <a href="galeria.html" class="hub-link mono" style="border-top-color: #334155; color: #D97706;">VER PLANOS DESTACADOS →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vista Previa de Galería -->
+    <section class="surface-section">
+      <div class="container">
+        <div class="section-header section-header--split">
+          <div>
+            <span class="section-tag mono">01.2 // SELECCIÓN DE LÁMINAS</span>
+            <h2 class="section-title">Planos Destacados</h2>
+          </div>
+          <a href="galeria.html" class="btn btn-outline-dark mono">VER TODAS LAS LÁMINAS (06) →</a>
+        </div>
+
+        <div class="gallery-grid" id="homeFeaturedGallery"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-titleblock">
+        <div class="ftb-cell">
+          <span class="ftb-label mono">PROYECTO EDUCATIVO</span>
+          <strong class="ftb-title">ATLAS DE DIBUJO TÉCNICO</strong>
+          <p class="ftb-desc">Sitio multipágina de referencia sobre normalización ISO/DIN, escalas, láminas técnicas, historia y aplicaciones industriales.</p>
+        </div>
+        <div class="ftb-cell">
+          <span class="ftb-label mono">PÁGINAS</span>
+          <ul class="ftb-links">
+            <li><a href="index.html">01 · Inicio</a></li>
+            <li><a href="pilares.html">02 · Pilares Fundamentales</a></li>
+            <li><a href="calculadora.html">03 · Calculadora de Escalas</a></li>
+          </ul>
+        </div>
+        <div class="ftb-cell">
+          <span class="ftb-label mono">SECCIONES</span>
+          <ul class="ftb-links">
+            <li><a href="galeria.html">04 · Galería de Láminas</a></li>
+            <li><a href="historia.html">05 · Historia y Evolución</a></li>
+            <li><a href="aplicaciones.html">06 · Aplicaciones</a></li>
+          </ul>
+        </div>
+        <div class="ftb-cell ftb-cell--action">
+          <span class="ftb-label mono">NAVEGACIÓN</span>
+          <a href="#top" class="btn btn-outline-light btn-sm mono" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ VOLVER ARRIBA</a>
+          <span class="ftb-copy mono">REV. 2026 // ISO 128</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal compartido para abrir las láminas destacadas directamente -->
+  <div class="modal-backdrop" id="plateModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-sheet">
+      <div class="modal-topbar mono">
+        <div class="modal-topbar__left">
+          <span id="modalCode">LAM-01</span>
+          <span class="sep">//</span>
+          <span id="modalCategory">VISTAS ORTOGONALES</span>
+        </div>
+        <div class="modal-topbar__actions">
+          <button type="button" class="modal-ctrl-btn mono" id="modalModeBtn" aria-pressed="false">VER SVG</button>
+          <button type="button" class="modal-ctrl-btn mono" id="modalZoomBtn" aria-pressed="false">ZOOM 100%</button>
+          <button type="button" class="modal-ctrl-btn mono" id="modalPrevBtn" aria-label="Lámina anterior">← ANT</button>
+          <button type="button" class="modal-ctrl-btn mono" id="modalNextBtn" aria-label="Lámina siguiente">SIG →</button>
+          <button type="button" class="modal-close-btn mono" id="modalCloseBtn" aria-label="Cerrar lámina">✕ ESC</button>
+        </div>
+      </div>
+      <div class="modal-canvas-wrap">
+        <div class="sheet-coords-top mono" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span></div>
+        <div class="modal-svg-stage" id="modalSvgStage"></div>
+      </div>
+      <div class="modal-titleblock">
+        <div class="mtb-main">
+          <span class="mtb-label mono">TÍTULO DE LA LÁMINA</span>
+          <h3 id="modalTitle">Título</h3>
+          <p id="modalDescription"></p>
+        </div>
+        <div class="mtb-meta mono">
+          <div class="mtb-cell"><span class="mtb-label">ESCALA</span><strong id="modalScale">1:1</strong></div>
+          <div class="mtb-cell"><span class="mtb-label">FORMATO</span><strong id="modalFormat">A4</strong></div>
+          <div class="mtb-cell"><span class="mtb-label">NORMA</span><strong id="modalNorm">ISO 128</strong></div>
+          <div class="mtb-cell"><span class="mtb-label">SISTEMA</span><strong id="modalSystem">ISO-E</strong></div>
+        </div>
+        <div class="mtb-strokes">
+          <span class="mtb-label mono">DESCRIPCIÓN DE TRAZOS Y CONVENCIONES</span>
+          <ul id="modalStrokesList" class="strokes-list"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

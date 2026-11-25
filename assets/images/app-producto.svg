@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Plano técnico de diseño de producto ergonómico con radios de curvatura y espesor de pared">
+  <defs>
+    <pattern id="grid32" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1E293B" stroke-width="1"/>
+    </pattern>
+    <pattern id="hatchProd" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#0284C7" stroke-width="1.1"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="540" fill="#0F172A"/>
+  <rect width="960" height="540" fill="url(#grid32)"/>
+  <rect x="24" y="24" width="912" height="492" fill="none" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Encabezado técnico -->
+  <text x="48" y="60" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="13">DISEÑO DE PRODUCTO // PROTOTIPO ERGONÓMICO · CARCASA ABS-PC</text>
+  <text x="912" y="60" text-anchor="end" fill="#D97706" font-family="JetBrains Mono, monospace" font-size="13">ESC. 1:1 · DFM / SLA</text>
+
+  <!-- Alzado ergonómico (izquierda) -->
+  <g transform="translate(80, 125)">
+    <text x="0" y="-12" fill="#0284C7" font-family="JetBrains Mono, monospace" font-size="12">A // PERFIL ERGONÓMICO Y RADIOS CLASE A</text>
+    <!-- Eje principal -->
+    <line x1="-20" y1="210" x2="430" y2="210" stroke="#D97706" stroke-width="1.1" stroke-dasharray="14 4 3 4"/>
+    <!-- Carcasa exterior -->
+    <path d="M 20 210 Q 20 75 180 62 Q 345 48 386 156 L 386 210 Z" fill="#1E293B" stroke="#F8FAFC" stroke-width="2.5"/>
+    <!-- Pared interna (línea oculta) -->
+    <path d="M 38 196 Q 38 92 180 80 Q 325 68 368 160 L 368 196 Z" fill="none" stroke="#0284C7" stroke-width="1.6" stroke-dasharray="8 4"/>
+    <!-- Botón superior ergonómico -->
+    <path d="M 235 60 Q 270 55 302 68" fill="none" stroke="#D97706" stroke-width="3.2"/>
+    <!-- Centro y radio de curvatura -->
+    <circle cx="180" cy="180" r="4" fill="#D97706"/>
+    <line x1="180" y1="180" x2="180" y2="62" stroke="#D97706" stroke-width="1.4"/>
+    <line x1="180" y1="180" x2="296" y2="96" stroke="#0284C7" stroke-width="1.2" stroke-dasharray="5 3"/>
+    <text x="190" y="126" fill="#D97706" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700">R 118.0</text>
+    <text x="275" y="142" fill="#0284C7" font-family="JetBrains Mono, monospace" font-size="12">e = 2.5 mm</text>
+    <!-- Cota longitud total -->
+    <line x1="20" y1="224" x2="20" y2="270" stroke="#D97706" stroke-width="1.1"/>
+    <line x1="386" y1="224" x2="386" y2="270" stroke="#D97706" stroke-width="1.1"/>
+    <line x1="20" y1="258" x2="386" y2="258" stroke="#D97706" stroke-width="1.4"/>
+    <text x="203" y="250" text-anchor="middle" fill="#D97706" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700">142.0 mm</text>
+  </g>
+
+  <!-- Sección transversal A-A (derecha) -->
+  <g transform="translate(590, 125)">
+    <text x="0" y="-12" fill="#0284C7" font-family="JetBrains Mono, monospace" font-size="12">B // SECCIÓN DE ENCAJE (SNAP-FIT)</text>
+    <line x1="145" y1="20" x2="145" y2="250" stroke="#D97706" stroke-width="1.1" stroke-dasharray="14 4 3 4"/>
+    <!-- Carcasa seccionada -->
+    <path d="M 40 210 L 40 120 Q 40 48 145 48 Q 250 48 250 120 L 250 210 L 232 210 L 232 124 Q 232 68 145 68 Q 58 68 58 124 L 58 210 Z" fill="url(#hatchProd)" stroke="#F8FAFC" stroke-width="2.2"/>
+    <!-- Base inferior con pestañas de encaje -->
+    <rect x="58" y="192" width="174" height="18" fill="#1E293B" stroke="#F8FAFC" stroke-width="2"/>
+    <!-- Nervio interior -->
+    <rect x="139" y="68" width="12" height="84" fill="#1E293B" stroke="#0284C7" stroke-width="1.5"/>
+    <!-- Cota anchura -->
+    <line x1="40" y1="224" x2="40" y2="270" stroke="#D97706" stroke-width="1.1"/>
+    <line x1="250" y1="224" x2="250" y2="270" stroke="#D97706" stroke-width="1.1"/>
+    <line x1="40" y1="258" x2="250" y2="258" stroke="#D97706" stroke-width="1.4"/>
+    <text x="145" y="250" text-anchor="middle" fill="#D97706" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700">68.5 mm</text>
+  </g>
+
+  <!-- Pie de plano -->
+  <rect x="24" y="456" width="912" height="60" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+  <text x="48" y="491" fill="#F8FAFC" font-family="JetBrains Mono, monospace" font-size="12">ÁNGULO DE DESMOLDEO: 2° · TOLERANCIA IMPRESIÓN 3D: ±0.15 mm · ARCHIVO: STEP / STL</text>
+</svg>

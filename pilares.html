@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pilares Fundamentales // DIBUJO TÉCNICO</title>
+  <meta name="description" content="Fundamentos del Dibujo Técnico: Normalización ISO/DIN, Alfabeto de líneas ISO 128, Formatos de papel serie A, Escalas y Geometría Descriptiva." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="pilares">
+  <div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress__bar" id="readingProgressBar"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+            <rect x="2" y="2" width="28" height="28" stroke="#0284C7" stroke-width="1.5" />
+            <circle cx="11" cy="16" r="5" stroke="#F8FAFC" stroke-width="1.5" />
+            <circle cx="11" cy="16" r="2.2" stroke="#D97706" stroke-width="1.2" />
+            <polygon points="19,12.5 27,10 27,22 19,19.5" stroke="#F8FAFC" stroke-width="1.5" fill="none" />
+            <line x1="4" y1="16" x2="29" y2="16" stroke="#0284C7" stroke-width="0.9" stroke-dasharray="3 2" />
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__title">DIBUJO TÉCNICO</span>
+          <span class="brand__code mono">ISO-128 // REF-2026</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link"><span class="mono nav-num">01</span> Inicio</a></li>
+          <li><a href="pilares.html" class="nav-link is-active"><span class="mono nav-num">02</span> Pilares</a></li>
+          <li><a href="calculadora.html" class="nav-link"><span class="mono nav-num">03</span> Escalas</a></li>
+          <li><a href="galeria.html" class="nav-link"><span class="mono nav-num">04</span> Galería</a></li>
+          <li><a href="historia.html" class="nav-link"><span class="mono nav-num">05</span> Historia</a></li>
+          <li><a href="aplicaciones.html" class="nav-link"><span class="mono nav-num">06</span> Aplicaciones</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-meta">
+        <span class="status-pill mono">PÁG: 02/06</span>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero blueprint-grid">
+      <div class="container page-hero__inner">
+        <div class="page-hero__text">
+          <div class="breadcrumb mono">
+            <a href="index.html">INICIO</a> <span class="sep">//</span> <span>02 · PILARES FUNDAMENTALES</span>
+          </div>
+          <h1>Pilares del Dibujo Técnico</h1>
+          <p>
+            Normalización internacional (ISO/DIN), alfabeto normalizado de líneas, formatos de papel, acotación y geometría descriptiva aplicada a la representación exacta.
+          </p>
+        </div>
+        <div class="page-hero__meta mono">
+          <div class="meta-box">
+            <span>NORMAS CLAVE</span>
+            <strong>ISO 128 · 129 · 5457</strong>
+          </div>
+          <div class="meta-box">
+            <span>SISTEMAS</span>
+            <strong>ISO-E / ISO-A</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Los 3 Pilares -->
+    <section class="paper-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag mono">02.1 // BASE NORMATIVA</span>
+          <h2 class="section-title">Tres disciplinas complementarias</h2>
+          <p class="section-lead">Cada plano técnico combina reglas de estandarización, rigor métrico y proyección geométrica.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <article class="pillar-card">
+            <div class="pillar-card__top">
+              <span class="pillar-code mono">ISO / DIN</span>
+              <svg viewBox="0 0 36 36" width="32" height="32" fill="none" aria-hidden="true">
+                <rect x="4" y="6" width="28" height="24" stroke="#0F172A" stroke-width="1.5" />
+                <line x1="18" y1="6" x2="18" y2="30" stroke="#0284C7" stroke-width="1.2" />
+                <line x1="18" y1="18" x2="32" y2="18" stroke="#0284C7" stroke-width="1.2" />
+                <rect x="18" y="23" width="14" height="7" fill="#0F172A" />
+              </svg>
+            </div>
+            <h3>Normalización (ISO / DIN)</h3>
+            <p>Unifica formatos de papel (A0–A4), grosores de trazo, tipografía técnica y cajetines para que cualquier taller interprete el documento sin ambigüedad.</p>
+            <ul class="pillar-list mono">
+              <li>ISO 5457 · Formatos y márgenes</li>
+              <li>ISO 128 · Tipos y grosores de línea</li>
+              <li>ISO 7200 · Campos del cajetín</li>
+            </ul>
+          </article>
+
+          <article class="pillar-card">
+            <div class="pillar-card__top">
+              <span class="pillar-code mono">E 1:X / mm</span>
+              <svg viewBox="0 0 36 36" width="32" height="32" fill="none" aria-hidden="true">
+                <line x1="4" y1="24" x2="32" y2="24" stroke="#0F172A" stroke-width="1.5" />
+                <line x1="4" y1="12" x2="4" y2="28" stroke="#D97706" stroke-width="1.5" />
+                <line x1="32" y1="12" x2="32" y2="28" stroke="#D97706" stroke-width="1.5" />
+                <line x1="6" y1="16" x2="30" y2="16" stroke="#0284C7" stroke-width="1.5" />
+                <polygon points="4,16 10,13 10,19" fill="#0284C7" />
+                <polygon points="32,16 26,13 26,19" fill="#0284C7" />
+              </svg>
+            </div>
+            <h3>Escalas y Acotación</h3>
+            <p>Establece la relación entre el dibujo y la realidad. Las cotas expresan siempre las dimensiones reales de la pieza en milímetros, sin depender de la escala.</p>
+            <ul class="pillar-list mono">
+              <li>ISO 5455 · Escalas normalizadas</li>
+              <li>ISO 129 · Acotación funcional y serie</li>
+              <li>Símbolos Ø, R, □ y tolerancias</li>
+            </ul>
+          </article>
+
+          <article class="pillar-card">
+            <div class="pillar-card__top">
+              <span class="pillar-code mono">3D → 2D</span>
+              <svg viewBox="0 0 36 36" width="32" height="32" fill="none" aria-hidden="true">
+                <polygon points="18,4 31,11 31,25 18,32 5,25 5,11" stroke="#0F172A" stroke-width="1.5" fill="none" />
+                <line x1="18" y1="18" x2="18" y2="32" stroke="#0F172A" stroke-width="1.5" />
+                <line x1="18" y1="18" x2="31" y2="11" stroke="#0F172A" stroke-width="1.5" />
+                <line x1="18" y1="18" x2="5" y2="11" stroke="#0F172A" stroke-width="1.5" />
+                <line x1="18" y1="4" x2="18" y2="18" stroke="#0284C7" stroke-width="1.1" stroke-dasharray="2 2" />
+              </svg>
+            </div>
+            <h3>Geometría Descriptiva</h3>
+            <p>Traduce volúmenes espaciales a vistas ortogonales, cortes, secciones y perspectivas axonométricas preservando verdaderas magnitudes y relaciones espaciales.</p>
+            <ul class="pillar-list mono">
+              <li>Sistema diédrico (alzado, planta, perfil)</li>
+              <li>Perspectiva isométrica (ejes 120°)</li>
+              <li>Cortes totales, parciales y semicortes</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alfabeto de Líneas ISO 128 -->
+    <section class="surface-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag mono">02.2 // NORMA ISO 128-20</span>
+          <h2 class="section-title">Alfabeto Normalizado de Líneas</h2>
+          <p class="section-lead">El grosor y el patrón de cada trazo comunican qué parte de la pieza es visible, oculta, simétrica o seccionada.</p>
+        </div>
+
+        <div class="tech-table-wrap">
+          <table class="tech-table">
+            <thead>
+              <tr>
+                <th>TIPO</th>
+                <th>MUESTRA GRÁFICA</th>
+                <th>GROSOR</th>
+                <th>APLICACIONES PRINCIPALES</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mono"><strong>A · Continua gruesa</strong></td>
+                <td><svg viewBox="0 0 180 16" width="160" height="16"><line x1="4" y1="8" x2="176" y2="8" stroke="#0F172A" stroke-width="3" /></svg></td>
+                <td class="mono">0.5 – 0.7 mm</td>
+                <td>Contornos visibles y aristas principales de la pieza.</td>
+              </tr>
+              <tr>
+                <td class="mono"><strong>B · Continua fina</strong></td>
+                <td><svg viewBox="0 0 180 16" width="160" height="16"><line x1="4" y1="8" x2="176" y2="8" stroke="#0F172A" stroke-width="1.2" /></svg></td>
+                <td class="mono">0.25 – 0.35 mm</td>
+                <td>Líneas de cota, líneas auxiliares, rayado de cortes a 45° y aristas ficticias.</td>
+              </tr>
+              <tr>
+                <td class="mono"><strong>E · Discontinua media</strong></td>
+                <td><svg viewBox="0 0 180 16" width="160" height="16"><line x1="4" y1="8" x2="176" y2="8" stroke="#0284C7" stroke-width="1.8" stroke-dasharray="9 5" /></svg></td>
+                <td class="mono">0.35 mm</td>
+                <td>Aristas y contornos ocultos (taladros internos, vaciados no visibles).</td>
+              </tr>
+              <tr>
+                <td class="mono"><strong>G · Trazo y punto fina</strong></td>
+                <td><svg viewBox="0 0 180 16" width="160" height="16"><line x1="4" y1="8" x2="176" y2="8" stroke="#D97706" stroke-width="1.3" stroke-dasharray="18 5 3 5" /></svg></td>
+                <td class="mono">0.25 mm</td>
+                <td>Ejes de revolución, ejes de simetría y trayectorias de centros.</td>
+              </tr>
+              <tr>
+                <td class="mono"><strong>H · Trazo y punto (ext. gruesos)</strong></td>
+                <td>
+                  <svg viewBox="0 0 180 16" width="160" height="16">
+                    <line x1="4" y1="8" x2="28" y2="8" stroke="#0F172A" stroke-width="3.2" />
+                    <line x1="28" y1="8" x2="152" y2="8" stroke="#0F172A" stroke-width="1.3" stroke-dasharray="16 5 3 5" />
+                    <line x1="152" y1="8" x2="176" y2="8" stroke="#0F172A" stroke-width="3.2" />
+                  </svg>
+                </td>
+                <td class="mono">0.7 / 0.25 mm</td>
+                <td>Trazas de planos de corte y secciones (ej. Corte A-A).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sistemas de Proyección y Formatos -->
+    <section class="paper-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag mono">02.3 // PROYECCIONES Y FORMATOS</span>
+          <h2 class="section-title">Sistema Europeo vs. Sistema Americano</h2>
+          <p class="section-lead">El símbolo normalizado en el cajetín indica siempre la disposición espacial de las vistas ortogonales.</p>
+        </div>
+
+        <div class="comparison-grid" style="margin-bottom: 3rem;">
+          <article class="comparison-card">
+            <span class="pillar-code mono" style="background-color:#1E293B; border-color:#334155; color:#D97706;">ISO-E // 1.er DIEDRO</span>
+            <h3>Sistema Europeo (DIN / UNE)</h3>
+            <p>El objeto se sitúa entre el observador y el plano de proyección. La planta se dibuja <strong>debajo</strong> del alzado y el perfil izquierdo a la <strong>derecha</strong>.</p>
+            <div class="comparison-svg">
+              <svg viewBox="0 0 260 90" role="img" aria-label="Símbolo del Sistema Europeo ISO-E">
+                <polygon points="48,26 118,14 118,76 48,64" fill="none" stroke="#F8FAFC" stroke-width="2" />
+                <circle cx="182" cy="45" r="31" fill="none" stroke="#F8FAFC" stroke-width="2" />
+                <circle cx="182" cy="45" r="19" fill="none" stroke="#F8FAFC" stroke-width="2" />
+                <line x1="28" y1="45" x2="226" y2="45" stroke="#0284C7" stroke-width="1.1" stroke-dasharray="10 3 2 3" />
+                <line x1="182" y1="8" x2="182" y2="82" stroke="#0284C7" stroke-width="1.1" stroke-dasharray="10 3 2 3" />
+              </svg>
+            </div>
+          </article>
+
+          <article class="comparison-card">
+            <span class="pillar-code mono" style="background-color:#1E293B; border-color:#334155; color:#0284C7;">ISO-A // 3.er DIEDRO</span>
+            <h3>Sistema Americano (ASME / ANSI)</h3>
+            <p>El plano de proyección se sitúa entre el observador y el objeto. La planta se dibuja <strong>arriba</strong> del alzado y el perfil derecho a la <strong>derecha</strong>.</p>
+            <div class="comparison-svg">
+              <svg viewBox="0 0 260 90" role="img" aria-label="Símbolo del Sistema Americano ISO-A">
+                <circle cx="78" cy="45" r="31" fill="none" stroke="#F8FAFC" stroke-width="2" />
+                <circle cx="78" cy="45" r="19" fill="none" stroke="#F8FAFC" stroke-width="2" />
+                <polygon points="142,26 212,14 212,76 142,64" fill="none" stroke="#F8FAFC" stroke-width="2" />
+                <line x1="34" y1="45" x2="232" y2="45" stroke="#D97706" stroke-width="1.1" stroke-dasharray="10 3 2 3" />
+                <line x1="78" y1="8" x2="78" y2="82" stroke="#D97706" stroke-width="1.1" stroke-dasharray="10 3 2 3" />
+              </svg>
+            </div>
+          </article>
+        </div>
+
+        <div class="tech-table-wrap">
+          <table class="tech-table">
+            <thead>
+              <tr>
+                <th>FORMATO ISO 216</th>
+                <th>DIMENSIONES (mm)</th>
+                <th>MÁRGENES (IZQ / RESTO)</th>
+                <th>USO HABITUAL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="mono"><strong>A0</strong></td><td class="mono">841 × 1189</td><td class="mono">20 mm / 10 mm</td><td>Planos generales de obra, urbanismo y grandes plantas industriales.</td></tr>
+              <tr><td class="mono"><strong>A1</strong></td><td class="mono">594 × 841</td><td class="mono">20 mm / 10 mm</td><td>Planos arquitectónicos ejecutivos y conjuntos mecánicos complejos.</td></tr>
+              <tr><td class="mono"><strong>A2</strong></td><td class="mono">420 × 594</td><td class="mono">20 mm / 10 mm</td><td>Subconjuntos de maquinaria, instalaciones MEP y detalles constructivos.</td></tr>
+              <tr><td class="mono"><strong>A3</strong></td><td class="mono">297 × 420</td><td class="mono">20 mm / 10 mm</td><td>Láminas de taller, ejes, bridas y plantas de módulos arquitectónicos.</td></tr>
+              <tr><td class="mono"><strong>A4</strong></td><td class="mono">210 × 297</td><td class="mono">20 mm / 10 mm</td><td>Piezas individuales, fichas técnicas, esquemáticos y memorias.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-titleblock">
+        <div class="ftb-cell">
+          <span class="ftb-label mono">PROYECTO EDUCATIVO</span>
+          <strong class="ftb-title">ATLAS DE DIBUJO TÉCNICO</strong>
+          <p class="ftb-desc">Página de fundamentos y normativa internacional ISO/DIN.</p>
+        </div>
+        <div class="ftb-cell">
+          <span class="ftb-label mono">PÁGINAS</span>
+          <ul class="ftb-links">
+            <li><a href="index.html">01 · Inicio</a></li>
+            <li><a href="pilares.html">02 · Pilares Fundamentales</a></li>
+            <li><a href="calculadora.html">03 · Calculadora de Escalas</a></li>
+          </ul>
+        </div>
+        <div class="ftb-cell">
+          <span class="ftb-label mono">SECCIONES</span>
+          <ul class="ftb-links">
+            <li><a href="galeria.html">04 · Galería de Láminas</a></li>
+            <li><a href="historia.html">05 · Historia y Evolución</a></li>
+            <li><a href="aplicaciones.html">06 · Aplicaciones</a></li>
+          </ul>
+        </div>
+        <div class="ftb-cell ftb-cell--action">
+          <span class="ftb-label mono">SIGUIENTE MÓDULO</span>
+          <a href="calculadora.html" class="btn btn-primary btn-sm mono">03 · ESCALAS →</a>
+          <span class="ftb-copy mono">REV. 2026 // ISO 128</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Historia del Arte y del Dibujo Técnico // DIBUJO TÉCNICO</title>
+  <meta name="description" content="Línea de tiempo interactiva del Dibujo Técnico: Antigüedad (Gudea y Egipto), Renacimiento (Brunelleschi y Leonardo), Gaspard Monge, normas DIN/ISO, CAD y BIM." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="historia">
+  <div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress__bar" id="readingProgressBar"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+            <rect x="2" y="2" width="28" height="28" stroke="#0284C7" stroke-width="1.5" />
+            <circle cx="11" cy="16" r="5" stroke="#F8FAFC" stroke-width="1.5" />
+            <circle cx="11" cy="16" r="2.2" stroke="#D97706" stroke-width="1.2" />
+            <polygon points="19,12.5 27,10 27,22 19,19.5" stroke="#F8FAFC" stroke-width="1.5" fill="none" />
+            <line x1="4" y1="16" x2="29" y2="16" stroke="#0284C7" stroke-width="0.9" stroke-dasharray="3 2" />
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__title">DIBUJO TÉCNICO</span>
+          <span class="brand__code mono">ISO-128 // REF-2026</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link"><span class="mono nav-num">01</span> Inicio</a></li>
+          <li><a href="pilares.html" class="nav-link"><span class="mono nav-num">02</span> Pilares</a></li>
+          <li><a href="calculadora.html" class="nav-link"><span class="mono nav-num">03</span> Escalas</a></li>
+          <li><a href="galeria.html" class="nav-link"><span class="mono nav-num">04</span> Galería</a></li>
+          <li><a href="historia.html" class="nav-link is-active"><span class="mono nav-num">05</span> Historia</a></li>
+          <li><a href="aplicaciones.html" class="nav-link"><span class="mono nav-num">06</span> Aplicaciones</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-meta">
+        <span class="status-pill mono">PÁG: 05/06</span>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero blueprint-grid">
+      <div class="container page-hero__inner">
+        <div class="page-hero__text">
+          <div class="breadcrumb mono">
+            <a href="index.html">INICIO</a> <span class="sep">//</span> <span>05 · HISTORIA DEL ARTE Y DEL DIBUJO TÉCNICO</span>
+          </div>
+          <h1>Evolución del Arte a la Precisión Técnica</h1>
+          <p>
+            Cuatro milenios de evolución gráfica: desde los primeros planos grabados en diorita en Mesopotamia y la perspectiva renacentista hasta la geometría descriptiva, el CAD y el modelado BIM.
+          </p>
+        </div>
+        <div class="page-hero__meta mono">
+          <div class="meta-box">
+            <span>PERÍODO</span>
+            <strong>2120 a.C. — HOY</strong>
+          </div>
+          <div class="meta-box">
+            <span>HITOS</span>
+            <strong>05 ÉPOCAS CLAVE</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blueprint-grid" style="padding-block: 4rem 5rem;">
+      <div class="container">
+        <!-- Ilustraciones editoriales generadas -->
+        <div class="history-media-grid">
+          <figure class="editorial-figure">
+            <img src="assets/images/historia-renacimiento.jpg" alt="Ilustración técnica de perspectiva renacentista, arcos geométricos y estudios mecánicos" />
+            <figcaption class="mono">
+              <span>RENACIMIENTO · PERSPECTIVA Y MECANISMOS</span>
+              <strong>FIG. H-01</strong>
+            </figcaption>
+          </figure>
+          <figure class="editorial-figure">
+            <img src="assets/images/historia-cad-bim.jpg" alt="Transición del modelado paramétrico 3D CAD y BIM a proyecciones ortogonales 2D" />
+            <figcaption class="mono">
+              <span>ACTUALIDAD · MODELADO 3D PARAMÉTRICO Y BIM</span>
+              <strong>FIG. H-02</strong>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- Navegación rápida por épocas -->
+        <div class="era-nav mono" role="tablist" aria-label="Saltar a época histórica">
+          <button type="button" class="era-pill is-active" data-era="antiguedad">01 · Antigüedad</button>
+          <button type="button" class="era-pill" data-era="renacimiento">02 · Renacimiento</button>
+          <button type="button" class="era-pill" data-era="siglo18">03 · Siglo XVIII</button>
+          <button type="button" class="era-pill" data-era="industrial">04 · Rev. Industrial y S. XX</button>
+          <button type="button" class="era-pill" data-era="actualidad">05 · Actualidad</button>
+        </div>
+
+        <!-- Línea de Tiempo Vertical Interactiva -->
+        <div class="timeline" id="historyTimeline">
+          <article class="timeline-item is-open" id="era-antiguedad" data-era="antiguedad">
+            <div class="timeline-marker mono">01</div>
+            <div class="timeline-card">
+              <div class="timeline-card__head">
+                <span class="timeline-date mono">~2120 a.C. — 1500 a.C.</span>
+                <span class="timeline-badge mono">ANTIGÜEDAD</span>
+              </div>
+              <h3>Mesopotamia y Egipto: los primeros planos arquitectónicos</h3>
+              <p>
+                La <strong>estatua de Gudea de Lagash</strong> (Sumeria) conserva sobre sus rodillas la primera planta arquitectónica conocida a escala, acompañada de una regla graduada y un punzón. En el Antiguo Egipto, los arquitectos trazaban planos de templos y tumbas sobre papiro usando retículas modulares de proporción.
+              </p>
+              <button type="button" class="timeline-toggle mono" aria-expanded="true">
+                <span>Ocultar aporte técnico</span>
+                <span class="toggle-sign">−</span>
+              </button>
+              <div class="timeline-detail">
+                <div class="detail-grid">
+                  <div>
+                    <span class="detail-label mono">HITO CLAVE</span>
+                    <p>Planta del templo de Ningirsu grabada en diorita (Gudea) y planos ortogonales en el Papiro de Turín.</p>
+                  </div>
+                  <div>
+                    <span class="detail-label mono">CONEXIÓN ARTE-TÉCNICA</span>
+                    <p>El canon egipcio de cuadrículas unificó la proporción escultórica con el replanteo constructivo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item" id="era-renacimiento" data-era="renacimiento">
+            <div class="timeline-marker mono">02</div>
+            <div class="timeline-card">
+              <div class="timeline-card__head">
+                <span class="timeline-date mono">SIGLOS XV — XVI</span>
+                <span class="timeline-badge mono">RENACIMIENTO</span>
+              </div>
+              <h3>Filippo Brunelleschi y Leonardo da Vinci</h3>
+              <p>
+                <strong>Filippo Brunelleschi</strong> formuló las leyes geométricas de la perspectiva cónica con puntos de fuga, transformando tanto la pintura como la arquitectura. <strong>Leonardo da Vinci</strong> consolidó el dibujo técnico moderno en sus códices de anatomía, máquinas, engranajes, vistas en corte y despieces explosionados.
+              </p>
+              <button type="button" class="timeline-toggle mono" aria-expanded="false">
+                <span>Ver aporte técnico</span>
+                <span class="toggle-sign">+</span>
+              </button>
+              <div class="timeline-detail">
+                <div class="detail-grid">
+                  <div>
+                    <span class="detail-label mono">HITO CLAVE</span>
+                    <p>Perspectiva lineal matemática (1415) y el <em>Codex Atlanticus</em> con mecanismos representados en tres dimensiones.</p>
+                  </div>
+                  <div>
+                    <span class="detail-label mono">CONEXIÓN ARTE-TÉCNICA</span>
+                    <p>El artista-ingeniero utilizaba el dibujo como laboratorio visual para analizar fuerzas, proporciones y ensamblajes.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item" id="era-siglo18" data-era="siglo18">
+            <div class="timeline-marker mono">03</div>
+            <div class="timeline-card">
+              <div class="timeline-card__head">
+                <span class="timeline-date mono">1795 — SIGLO XVIII</span>
+                <span class="timeline-badge mono">GEOMETRÍA DESCRIPTIVA</span>
+              </div>
+              <h3>Gaspard Monge y la creación de la Geometría Descriptiva</h3>
+              <p>
+                El matemático francés <strong>Gaspard Monge</strong> sistematizó la <em>Géométrie Descriptive</em>, estableciendo un método científico riguroso para proyectar objetos tridimensionales sobre dos planos ortogonales abatidos (sistema diédrico). Durante años fue clasificado como secreto militar por su precisión en fortificaciones.
+              </p>
+              <button type="button" class="timeline-toggle mono" aria-expanded="false">
+                <span>Ver aporte técnico</span>
+                <span class="toggle-sign">+</span>
+              </button>
+              <div class="timeline-detail">
+                <div class="detail-grid">
+                  <div>
+                    <span class="detail-label mono">HITO CLAVE</span>
+                    <p>Formalización de vistas diédricas (planta y alzado) y resolución gráfica de intersecciones espaciales.</p>
+                  </div>
+                  <div>
+                    <span class="detail-label mono">IMPACTO</span>
+                    <p>Constituye la base matemática exacta de todos los planos de ingeniería y sistemas CAD actuales.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item" id="era-industrial" data-era="industrial">
+            <div class="timeline-marker mono">04</div>
+            <div class="timeline-card">
+              <div class="timeline-card__head">
+                <span class="timeline-date mono">1850 — 1980</span>
+                <span class="timeline-badge mono">ESTANDARIZACIÓN Y CAD</span>
+              </div>
+              <h3>Revolución Industrial, Normas DIN / ISO y paso al CAD</h3>
+              <p>
+                La producción en serie exigió piezas intercambiables con tolerancias exactas. Nacieron los organismos <strong>DIN</strong> (1917) e <strong>ISO</strong> (1947) para unificar símbolos, formatos y acotación. En el siglo XX, el tablero de dibujo, escuadras y rapidógrafos evolucionaron hacia el diseño asistido por computadora (<strong>CAD</strong>).
+              </p>
+              <button type="button" class="timeline-toggle mono" aria-expanded="false">
+                <span>Ver aporte técnico</span>
+                <span class="toggle-sign">+</span>
+              </button>
+              <div class="timeline-detail">
+                <div class="detail-grid">
+                  <div>
+                    <span class="detail-label mono">HITO CLAVE</span>
+                    <p>Cianotipias (<em>blueprints</em>), serie DIN 476 (A0–A4), Sketchpad (1963) y masificación de AutoCAD (1982).</p>
+                  </div>
+                  <div>
+                    <span class="detail-label mono">IMPACTO</span>
+                    <p>Eliminó ambigüedades entre oficina técnica y taller, habilitando la manufactura global distribuida.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item" id="era-actualidad" data-era="actualidad">
+            <div class="timeline-marker mono">05</div>
+            <div class="timeline-card">
+              <div class="timeline-card__head">
+                <span class="timeline-date mono">SIGLO XXI — PRESENTE</span>
+                <span class="timeline-badge mono">MODELADO 3D Y BIM</span>
+              </div>
+              <h3>Modelado Paramétrico 3D y Metodología BIM</h3>
+              <p>
+                Hoy los planos 2D se derivan dinámicamente de modelos sólidos paramétricos 3D (SolidWorks, Inventor, Fusion, CATIA) y entornos <strong>BIM</strong> (Revit, Archicad). Cada elemento gráfico integra propiedades de material, simulación de esfuerzos (FEA), costos y fabricación digital directa.
+              </p>
+              <button type="button" class="timeline-toggle mono" aria-expanded="false">
+                <span>Ver aporte técnico</span>
+                <span class="toggle-sign">+</span>
+              </button>
+              <div class="timeline-detail">
+                <div class="detail-grid">
+                  <div>
+                    <span class="detail-label mono">HITO CLAVE</span>
+                    <p>Definición Basada en Modelos (MBD), gemelos digitales y coordinación colaborativa en la nube (ISO 19650).</p>
+                  </div>
+                  <div>
+                    <span class="detail-label mono">VIGENCIA DEL DIBUJO</span>
+                    <p>Aunque el software automatiza vistas, dominar la geometría descriptiva y las normas ISO sigue siendo indispensable.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-titleblock">
+        <div class="ftb-cell">
+          <span class="ftb-label mono">PROYECTO EDUCATIVO</span>
+          <strong class="ftb-title">ATLAS DE DIBUJO TÉCNICO</strong>
+          <p class="ftb-desc">Cronología ilustrada de la representación técnica desde la Antigüedad hasta el BIM.</p>
+        </div>
+        <div class="ftb-cell">
+          <span class="ftb-label mono">PÁGINAS</span>
+          <ul class="ftb-links">
+            <li><a href="index.html">01 · Inicio</a></li>
+            <li><a href="pilares.html">02 · Pilares Fundamentales</a></li>
+            <li><a href="calculadora.html">03 · Calculadora de Escalas</a></li>
+          </ul>
+        </div>
+        <div class="ftb-cell">
+          <span class="ftb-label mono">SECCIONES</span>
+          <ul class="ftb-links">
+            <li><a href="galeria.html">04 · Galería de Láminas</a></li>
+            <li><a href="historia.html">05 · Historia y Evolución</a></li>
+            <li><a href="aplicaciones.html">06 · Aplicaciones</a></li>
+          </ul>
+        </div>
+        <div class="ftb-cell ftb-cell--action">
+          <span class="ftb-label mono">SIGUIENTE MÓDULO</span>
+          <a href="aplicaciones.html" class="btn btn-primary btn-sm mono">06 · APLICACIONES →</a>
+          <span class="ftb-copy mono">REV. 2026 // CRONOLOGÍA</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

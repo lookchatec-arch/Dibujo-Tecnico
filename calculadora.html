@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Escalas ISO 5455 // DIBUJO TÉCNICO</title>
+  <meta name="description" content="Calculadora interactiva bidireccional de escalas normalizadas ISO 5455: escala natural, reducción y ampliación con verificación de formato A4 y A3." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="calculadora">
+  <div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress__bar" id="readingProgressBar"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+            <rect x="2" y="2" width="28" height="28" stroke="#0284C7" stroke-width="1.5" />
+            <circle cx="11" cy="16" r="5" stroke="#F8FAFC" stroke-width="1.5" />
+            <circle cx="11" cy="16" r="2.2" stroke="#D97706" stroke-width="1.2" />
+            <polygon points="19,12.5 27,10 27,22 19,19.5" stroke="#F8FAFC" stroke-width="1.5" fill="none" />
+            <line x1="4" y1="16" x2="29" y2="16" stroke="#0284C7" stroke-width="0.9" stroke-dasharray="3 2" />
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__title">DIBUJO TÉCNICO</span>
+          <span class="brand__code mono">ISO-128 // REF-2026</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link"><span class="mono nav-num">01</span> Inicio</a></li>
+          <li><a href="pilares.html" class="nav-link"><span class="mono nav-num">02</span> Pilares</a></li>
+          <li><a href="calculadora.html" class="nav-link is-active"><span class="mono nav-num">03</span> Escalas</a></li>
+          <li><a href="galeria.html" class="nav-link"><span class="mono nav-num">04</span> Galería</a></li>
+          <li><a href="historia.html" class="nav-link"><span class="mono nav-num">05</span> Historia</a></li>
+          <li><a href="aplicaciones.html" class="nav-link"><span class="mono nav-num">06</span> Aplicaciones</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-meta">
+        <span class="status-pill mono">PÁG: 03/06</span>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero blueprint-grid">
+      <div class="container page-hero__inner">
+        <div class="page-hero__text">
+          <div class="breadcrumb mono">
+            <a href="index.html">INICIO</a> <span class="sep">//</span> <span>03 · CALCULADORA DE ESCALAS</span>
+          </div>
+          <h1>Calculadora de Escalas ISO 5455</h1>
+          <p>
+            Calcula en tiempo real dimensiones en el plano a partir de medidas reales o viceversa. Verifica automáticamente si tu dibujo entra en formato A4 o A3 con márgenes normalizados.
+          </p>
+        </div>
+        <div class="page-hero__meta mono">
+          <div class="meta-box">
+            <span>FÓRMULA</span>
+            <strong>E = Dibujo / Real</strong>
+          </div>
+          <div class="meta-box">
+            <span>NORMA</span>
+            <strong>UNE-EN ISO 5455</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="surface-section">
+      <div class="container">
+        <div class="calc-wrapper">
+          <div class="calc-header">
+            <div>
+              <span class="section-tag mono">HERRAMIENTA BIDIRECCIONAL</span>
+              <h2 class="section-title">Conversor de Escala Técnica</h2>
+            </div>
+            <div class="calc-formula mono">E = D / R</div>
+          </div>
+
+          <div class="calc-grid">
+            <div class="calc-controls">
+              <div class="control-group">
+                <label class="control-label mono">1. DIRECCIÓN DE CÁLCULO</label>
+                <div class="segmented-control segmented-control--two" role="radiogroup" aria-label="Dirección de cálculo">
+                  <button type="button" class="seg-btn is-active" data-calc-dir="real-to-draw">Medida Real → Plano</button>
+                  <button type="button" class="seg-btn" data-calc-dir="draw-to-real">Medida en Plano → Real</button>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label class="control-label mono">2. TIPO DE ESCALA</label>
+                <div class="segmented-control" role="radiogroup" aria-label="Tipo de escala">
+                  <button type="button" class="seg-btn" data-scale-type="natural">Natural (1:1)</button>
+                  <button type="button" class="seg-btn is-active" data-scale-type="reduccion">Reducción (1:X)</button>
+                  <button type="button" class="seg-btn" data-scale-type="ampliacion">Ampliación (X:1)</button>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label class="control-label mono">3. ESCALAS NORMALIZADAS RÁPIDAS</label>
+                <div class="preset-chips mono" id="scalePresets">
+                  <button type="button" class="preset-chip" data-type="reduccion" data-factor="100">1:100</button>
+                  <button type="button" class="preset-chip is-active" data-type="reduccion" data-factor="50">1:50</button>
+                  <button type="button" class="preset-chip" data-type="reduccion" data-factor="20">1:20</button>
+                  <button type="button" class="preset-chip" data-type="reduccion" data-factor="10">1:10</button>
+                  <button type="button" class="preset-chip" data-type="reduccion" data-factor="5">1:5</button>
+                  <button type="button" class="preset-chip" data-type="reduccion" data-factor="2">1:2</button>
+                  <button type="button" class="preset-chip" data-type="natural" data-factor="1">1:1</button>
+                  <button type="button" class="preset-chip" data-type="ampliacion" data-factor="2">2:1</button>
+                  <button type="button" class="preset-chip" data-type="ampliacion" data-factor="5">5:1</button>
+                  <button type="button" class="preset-chip" data-type="ampliacion" data-factor="10">10:1</button>
+                </div>
+              </div>
+
+              <div class="inputs-row">
+                <div class="control-group">
+                  <label for="scaleFactor" class="control-label mono">FACTOR (X)</label>
+                  <input type="number" id="scaleFactor" class="tech-input mono" value="50" min="1" max="10000" step="any" />
+                </div>
+                <div class="control-group">
+                  <label for="inputUnit" class="control-label mono">UNIDAD DE ENTRADA</label>
+                  <select id="inputUnit" class="tech-input mono">
+                    <option value="mm">Milímetros (mm)</option>
+                    <option value="cm">Centímetros (cm)</option>
+                    <option value="m" selected>Metros (m)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label for="realDimension" id="dimensionInputLabel" class="control-label mono">MEDIDA REAL DEL OBJETO</label>
+                <input type="number" id="realDimension" class="tech-input tech-input--lg mono" value="6" min="0.01" step="any" />
+              </div>
+            </div>
+
+            <div class="calc-output blueprint-grid">
+              <div class="output-top mono">
+                <span id="calcScaleLabel">ESCALA: 1:50</span>
+                <span class="badge-amber" id="calcTypeBadge">REDUCCIÓN</span>
+              </div>
+
+              <div class="output-main">
+                <span class="output-caption mono" id="outputCaption">MEDIDA EN EL PLANO (DIBUJO)</span>
+                <div class="output-value mono" id="drawingResultMm">120.00 mm</div>
+                <div class="output-sub mono" id="drawingResultCm">= 12.00 cm · Real: 6,000.00 mm</div>
+              </div>
+
+              <div class="scale-ruler-box">
+                <div class="ruler-header mono">
+                  <span>AJUSTE SOBRE FORMATO A4 (297 mm)</span>
+                  <span id="paperFitStatus">CABE EN A4</span>
+                </div>
+                <div class="ruler-track" aria-hidden="true">
+                  <div class="ruler-bar" id="rulerBar" style="width: 40.4%;"></div>
+                </div>
+                <div class="ruler-ticks mono">
+                  <span>0 mm</span>
+                  <span>148.5 mm</span>
+                  <span>297 mm (A4)</span>
+                </div>
+              </div>
+
+              <p class="calc-note" id="calcUsageNote">
+                <strong>Uso habitual:</strong> Planos de arquitectura, plantas de distribución y alzados de edificación.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabla de Escalas ISO 5455 -->
+    <section class="paper-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag mono">03.2 // TABLA DE REFERENCIA</span>
+          <h2 class="section-title">Escalas Recomendadas ISO 5455</h2>
+          <p class="section-lead">Valores preferentes según disciplina para mantener coherencia visual en escalímetros estándar.</p>
+        </div>
+
+        <div class="tech-table-wrap">
+          <table class="tech-table">
+            <thead>
+              <tr>
+                <th>CATEGORÍA</th>
+                <th>ESCALAS NORMALIZADAS</th>
+                <th>CAMPO DE APLICACIÓN</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mono"><strong>Ampliación (X:1)</strong></td>
+                <td class="mono">2:1 · 5:1 · 10:1 · 20:1 · 50:1</td>
+                <td>Relojería, microelectrónica, conectores, engranajes finos y detalles de tolerancia.</td>
+              </tr>
+              <tr>
+                <td class="mono"><strong>Natural (1:1)</strong></td>
+                <td class="mono">1:1</td>
+                <td>Piezas mecánicas medianas, utillaje de mano y carcasas de producto.</td>
+              </tr>
+              <tr>
+                <td class="mono"><strong>Reducción Mecánica</strong></td>
+                <td class="mono">1:2 · 1:5 · 1:10 · 1:20</td>
+                <td>Maquinaria industrial, chasis, mobiliario y detalles constructivos.</td>
+              </tr>
+              <tr>
+                <td class="mono"><strong>Reducción Arquitectónica</strong></td>
+                <td class="mono">1:50 · 1:100 · 1:200 · 1:500</td>
+                <td>Plantas de viviendas, alzados, cortes estructurales y conjuntos edificatorios.</td>
+              </tr>
+              <tr>
+                <td class="mono"><strong>Topografía / Urbanismo</strong></td>
+                <td class="mono">1:1000 · 1:2000 · 1:5000 · 1:10000</td>
+                <td>Parcelarios, trazado vial, redes urbanas y cartografía técnica.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-titleblock">
+        <div class="ftb-cell">
+          <span class="ftb-label mono">PROYECTO EDUCATIVO</span>
+          <strong class="ftb-title">ATLAS DE DIBUJO TÉCNICO</strong>
+          <p class="ftb-desc">Herramienta interactiva de conversión de escalas según ISO 5455.</p>
+        </div>
+        <div class="ftb-cell">
+          <span class="ftb-label mono">PÁGINAS</span>
+          <ul class="ftb-links">
+            <li><a href="index.html">01 · Inicio</a></li>
+            <li><a href="pilares.html">02 · Pilares Fundamentales</a></li>
+            <li><a href="calculadora.html">03 · Calculadora de Escalas</a></li>
+          </ul>
+        </div>
+        <div class="ftb-cell">
+          <span class="ftb-label mono">SECCIONES</span>
+          <ul class="ftb-links">
+            <li><a href="galeria.html">04 · Galería de Láminas</a></li>
+            <li><a href="historia.html">05 · Historia y Evolución</a></li>
+            <li><a href="aplicaciones.html">06 · Aplicaciones</a></li>
+          </ul>
+        </div>
+        <div class="ftb-cell ftb-cell--action">
+          <span class="ftb-label mono">SIGUIENTE MÓDULO</span>
+          <a href="galeria.html" class="btn btn-primary btn-sm mono">04 · GALERÍA →</a>
+          <span class="ftb-copy mono">REV. 2026 // ISO 5455</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
